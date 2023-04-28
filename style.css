@@ -1,0 +1,163 @@
+/*
+* Login Template
+* Name     : Flower Glass
+* Version  : 1.0
+* Designer : Use63
+* github   : https://github.com/use63
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: url("flower.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+form {
+  width: 500px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+}
+
+.panel {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-flow: column;
+  align-items: auto;
+  justify-content: start;
+  padding: 5%;
+  backdrop-filter: blur(5px);
+  border-radius: 14px;
+}
+
+.brand {
+  margin-bottom: 2em;
+}
+
+.username,
+.password,
+.username:focus-visible,
+.password:focus-visible {
+  width: 100%;
+  height: 40px;
+  border: 0;
+  outline: 0;
+  padding: 1em;
+}
+.lbl-username,
+.lbl-password {
+  font: 12px !important;
+  padding-bottom: 5px;
+}
+.lbl-remember {
+  font-size: 12px;
+  padding: 10px;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.ruler {
+  margin: 1em 0 0 0;
+}
+
+.another {
+  padding-top: 1em;
+  display: flex;
+  align-items: stretch;
+  gap: 1em;
+}
+.submit,
+.facebook,
+.google {
+  width: 100%;
+  height: 40px;
+  display: inline-block;
+  margin: auto;
+  border: 0;
+  border-radius: 3px;
+}
+
+.forget,
+.anotherText,
+.create {
+  padding: 10px 0 0 0;
+  display: flex;
+  font-size: 14px;
+}
+.create {
+  justify-content: center;
+  margin-top: 1em;
+}
+.anotherText {
+  justify-content: start;
+}
+.forget {
+  justify-content: end;
+}
+.forget a,
+.create a {
+  text-decoration: none;
+}
+
+/* Color */
+
+.panel {
+  background: linear-gradient(
+    135deg,
+    navy,
+    rgba(135, 206, 250, 0.5),
+    rgba(0, 0, 255, 0.3)
+  );
+  color: antiquewhite;
+  box-shadow: 0 0 0 7px rgba(245, 245, 245, 0.5);
+  background-color: black !important;
+}
+.username,
+.password,
+.username:focus-visible,
+.password:focus-visible {
+  background-color: whitesmoke;
+  border-left: 4px solid lightskyblue;
+  outline: 0;
+}
+.submit {
+  background-color: lightskyblue;
+  transition: 0.1s;
+  color: inherit;
+}
+.submit:hover,
+.google:hover,
+.facebook:hover {
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+}
+.forget a,
+.create a {
+  color: inherit;
+}
+.facebook {
+  background-color: blue;
+  color: inherit;
+}
+.google {
+  background-color: red;
+  color: inherit;
+}
+
+/* Responsive */
+@media screen and (max-width: 576px) {
+  form {
+    width: 100%;
+  }
+}
